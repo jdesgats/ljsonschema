@@ -166,7 +166,7 @@ function codectx_mt:as_string()
 end
 
 function codectx_mt:as_func(name, ...)
-  local loader, err = load(self:_get_loader(), 'jsonschema:' .. (name or 'anonymous'))
+  local loader, err = load(self:as_string(), 'jsonschema:' .. (name or 'anonymous'))
   if loader then
     local validator
     validator, err = loader(self._uservalues, ...)
