@@ -1,4 +1,4 @@
-lsjonschema: JSON schema validator
+ljsonschema: JSON schema validator
 ==================================
 
 This library provides a JSON schema draft 4 validator for Lua. Note that
